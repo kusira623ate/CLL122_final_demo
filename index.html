@@ -12,48 +12,46 @@
   <option value="CSTR">CSTR</option>
 </select></p>
 
-<p>Temperature, T : <input type="number" step="any" id="second"> 
-  <select  id="secondhelp">
+<p>Temperature, T : <input type="number" step="any" id="second"> <select  id="secondhelp">
   <option value="<sup>o</sup>C">°C</option>
-<!--   <option value="<sup>o</sup>F">°F</option>
-  <option value="K">K</option> -->
-</select>
-  </p>
+  <option value="<sup>o</sup>F">°F</option>
+  <option value="K">K</option>
+</select></p>
 
 <p>Pressure, P : <input type="number" step="any" id="third">  <select id="thirdhelp">
   <option value="bar">bar</option>
-<!--   <option value="Pa">Pa</option>
-  <option value="atm">atm</option> -->
+  <option value="Pa">Pa</option>
+  <option value="atm">atm</option>
 </select></p>
 
 <!-- <p>Reaction Order, n : <input type="number" step="any" id="fourth"></p> -->
 
 <p>Rate Constant, k : <input type="number" step="any" id="fifth"> <select  id="fifthhelp">
-  <option value="s<sup>-1</sup>">s^-1</option>
-<!--   <option value="min<sup>-1</sup>">min^-1</option>
-  <option value="h<sup>o</sup>">h^-1</option> -->
+  <option value="s^-1">s^-1</option>
+  <option value="min^-1">min^-1</option>
+  <option value="h^-1">h^-1</option>
 </select></p>
 
-<p>Conversion, X : <input type="number" step="any" max="100" id="sixth"> (in %) </p>
+<p>Conversion, X : <input type="number" step="any" max="100" min="0" id="sixth"> (in %) </p>
 
 <p>Volume flow rate, v<sub>o</sub>: <input type="number" step="any" id="seventh"> <select id="seventhhelp">
-  <option value="m<sup>3</sup>/s">m^3/s</option>
-<!--   <option value="m<sup>3</sup>/h">m^3/h</option>
-  <option value="L/h">L/h</option> -->
+  <option value="m^3/s">m^3/s</option>
+  <option value="m^3/h">m^3/h</option>
+  <option value="L/h">L/h</option>
 </select></p>
 
 <button onclick="calculate()">Calculate</button>
 
 <p>Volume of Reactor required = <input type="number" step="any" id="answer"> <select id="answerhelp">
   <option value="m^3">m^3</option>
-<!--   <option value="L">L</option> -->
+  <option value="L">L</option>
 </select></p>
 
 <p>Residence Time, τ : <input type="number" step="any" id="result"> <select  id="resulthelp">
   <option value="s">s</option>
-<!--   <option value="min">min</option>
-  <option value="h">h</option> -->
-</select></p> </p>
+  <option value="min">min</option>
+  <option value="h">h</option>
+</select></p>
 
 </body>
 </html>
