@@ -48,6 +48,6 @@ function calculate()
     V=-((v*Math.log1p(-X))/k);
   }
   τ=V/v;
-  document.getElementById("answer").value = V;
-  document.getElementById("result").value = τ;
+  document.getElementById("answer").value = V.toFixed(3);
+  document.getElementById("result").value = τ.toFixed(3);
 }
